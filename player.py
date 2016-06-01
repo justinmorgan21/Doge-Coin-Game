@@ -26,7 +26,7 @@ class Player(pygame.sprite.Sprite):
          
             # Move x according to the axis. We multiply by 10 to speed up the movement.
             # Convert to an integer because we can't draw at pixel 3.5, just 3 or 4.
-            x_move = int(horiz_axis_pos * 15)
+            x_move = int(horiz_axis_pos * 20)
             if abs(x_move) > 3:
                 self.rect.x += x_move
             #y_coord = y_coord + int(vert_axis_pos * 10)  
